@@ -56,4 +56,11 @@ public class MediaLib {
     public static int getNumSongs() {
         return numSongs;
     }
+
+    public static void reset() {
+        numEntries = 0;
+        numBooks = 0;
+        numMovies = 0;
+        numSongs = 0;
+    }
 }

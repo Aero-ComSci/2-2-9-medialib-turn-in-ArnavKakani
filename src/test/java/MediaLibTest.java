@@ -1,7 +1,13 @@
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.BeforeEach;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class MediaLibTest {
+    @BeforeEach
+    void setUp() {
+        MediaLib.reset();
+    }
+
     @Test
     void testAddObjects() {
         MediaLib myLib1 = new MediaLib();
