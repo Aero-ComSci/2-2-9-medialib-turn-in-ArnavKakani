@@ -4,7 +4,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 class MediaLibTest {
     @Test
     void testAddObjects() {
-        Medialib myLib1 = new MediaLib();
+        MediaLib myLib1 = new MediaLib();
         myLib1.addBook(" "," ");
         myLib1.addMovie(" ",1.5);
         myLib1.addSong("Bulls on Parade");
@@ -12,9 +12,9 @@ class MediaLibTest {
     }
     @Test
     void TestGetTallies(){
-        Medialib myLib1 = new MediaLib();
+        MediaLib myLib1 = new MediaLib();
         myLib1.addBook(" "," ");
-         Medialib myLib2 = new MediaLib();
+        MediaLib myLib2 = new MediaLib();
         myLib2.addBook(" "," ");
         assertEquals(2, MediaLib.getNumBooks());
        
